@@ -1,0 +1,492 @@
+:root{
+    --color-text-primary: #1c2a38;
+    --color-main: #00a465;
+    --color-gray: #f7f7f7;
+}
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+
+
+.team {
+    padding:20px 0px 20px 0px;
+    background-color:#fff;
+}
+
+
+.container{
+    max-width: 1890px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.team__inner {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+    gap: 30px;
+}
+@media(max-width: 1440px){
+    .team__inner{
+        gap: 10px;
+    }
+}
+
+
+@media(max-width: 993px){
+    .team__inner{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+
+/* Calendar */
+
+.team__calendar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 30%;
+    background-color:#f0f0f0;
+    min-height: 100%;
+    padding:32px 0px 32px 0px;
+    border:1px solid rgba(28, 42, 56, 0.05);
+    order:1;
+}
+
+@media(max-width: 1440px){
+    .team__calendar {
+        padding:20px 0px 20px 0px; 
+    }
+}
+@media(max-width: 993px){
+    .team__calendar{
+        order: 2;
+    }
+}
+
+
+.team__calendar-title {
+    font-size: 30px;
+    text-align: center;
+    padding:0px 5px 0px 5px;
+    line-height: 110%;
+    font-weight: 600;
+}
+@media(max-width: 1440px){
+    .team__calendar-title{
+        font-size: 24px;
+    }
+}
+.team__calendar-list {
+    margin-top: 32px;
+    flex: 1;
+}
+
+.team__calendar-list .team__calendar-item:nth-child(odd){
+    background-color: #fff;
+}
+
+.team__calendar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 32px 10px 32px;
+}
+@media(max-width: 1440px){
+    .team__calendar-item{
+        padding:10px 20px 10px 20px;
+    }
+}
+@media(max-width: 477px){
+    .team__calendar-item{
+        padding:8px 20px 8px 20px;
+    }
+}
+.team__calendar-team {
+    width: 60px;
+}
+@media(max-width: 477px){
+    .team__calendar-team {
+        width: 40px;
+    }
+}
+.team__calendar-team img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-team {
+}
+.team__calendar-date {
+    font-size: 24px;
+}
+@media(max-width: 1440px){
+    .team__calendar-date{
+        font-size: 20px;
+    }
+}
+.date {
+}
+.guest-team {
+}
+.team__calendar-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.all-link{
+    display: block;
+    font-size: 18px;
+    color: var(--color-text-primary);
+    text-align: center;
+    transition: color 0.2s ease 0s;
+
+}
+
+.all-link:hover{
+    color: var(--color-main);
+}
+
+/* Calendar end */
+
+
+
+/* Next closest game styles */
+
+.team__next {
+    background-color:var(--color-main);
+    flex: 0 1 40%;
+    padding:32px 0px 32px 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:32px 32px 32px 32px;
+    order: 2;
+}
+@media(max-width: 993px){
+    .team__next{
+        order:1;
+    }
+}
+
+@media(max-width: 477px){
+    .team__next{
+        padding: 20px;
+    }
+}
+.team__next-title {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+.team__next-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 18px;
+    flex: 1;
+
+}
+.team__next-home {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.team__home-logo {
+    max-width: 200px;
+}
+@media(max-width: 577px){
+    .team__home-logo{
+        max-width: 100px;
+    }
+}
+.logo-home {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.team__home-name, .team__guest-name {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-top: 12px;
+}
+@media(max-width: 1440px){
+    .team__home-name, .team__guest-name{
+        font-size:18px;
+    }
+}
+.team__next-date {
+    text-align: center;
+    padding-top: 15%;
+}
+@media(max-width: 577px){
+    .team__next-date{
+        padding-top: 0;
+    }
+}
+.team__next-day {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+@media(max-width: 577px){
+    .team__next-day{
+        font-size: 20px;
+    }
+}
+.team__next-time {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+.team__next-guest {
+    display: flex;
+     width: 40%;
+    flex-direction: column;
+    align-items: center;
+  
+    
+}
+.team__guest-logo {
+    max-width: 200px;
+}
+@media(max-width: 577px){
+    .team__guest-logo{
+        max-width: 100px;
+    }
+}
+.logo-guest {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.team__next-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.team__next-live {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.live{
+    font-size: 20px;
+    text-decoration: none;
+    color: #00a465;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    border-radius:6px;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+   
+}
+@media(max-width: 993px){
+    .live{
+        margin-top: 32px;
+    }
+}
+@media(max-width: 477px){
+    .live{
+        padding: 10px 40px;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+}
+.live:hover {
+    background-color: var(--color-text-primary);
+    color: #fff;;
+}
+.team__next-all {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    transition: opacity 0.2s ease 0s;
+}
+
+.team__next-all:hover{
+    opacity:0.9;
+}
+@media(max-width: 993px){
+    .team__next-all{
+        margin-top: 32px;
+    }
+}
+
+/* ------------ */
+
+/* Standings */
+
+.team__table {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 30%;
+    background-color:#f0f0f0;
+    min-height: 100%;
+    padding:32px 0px 32px 0px;
+    border:1px solid rgba(28, 42, 56, 0.05);
+    order: 3;
+    
+}
+@media(max-width: 1440px){
+    .team__table{
+        padding:20px 0px 20px 0px;
+    }
+}
+.team__table-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 32px 0px 32px;
+}
+@media(max-width: 1440px){
+    .team__table-top{
+        padding:0px 20px 0px 20px;
+    }
+}
+
+.team__table-logo {
+    max-width: 120px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.team__table-logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.team__table-label {
+    font-size: 24px;
+    font-weight: 600;
+}
+@media(max-width: 1440px){
+    .team__table-label{
+        font-size: 20px;
+    }
+}
+.team__table-standings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    flex: 1;
+    
+}
+.team__table-list {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.team__table-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 32px 10px 32px;
+}
+
+@media(max-width: 1440px){
+    .team__table-item{
+
+        padding:10px 20px 10px 20px;
+    }
+}
+@media(max-width: 477px){
+    .team__table-item{
+
+        padding:8px 20px 8px 20px;
+    }
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+}
+.team-logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media(max-width: 477px){
+    .team-info {
+        gap: 12px;
+    }
+}
+@media(max-width: 477px){
+    .team-logo{
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+.team-logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.team-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+}
+@media(max-width: 477px){
+    .team-name{
+        font-size: 16px;
+    }
+}
+.team-points {
+    font-size: 20px;
+    color: var(--color-main);
+    text-align: right;
+}
+@media(max-width: 477px){
+    .team-points{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.team__table-list .team__table-item:nth-child(odd){
+    background-color: #fff;
+}
+
+
+.team__table-full{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.table-full{
+    font-size: 18px;
+    color: var(--color-text-primary);
+    transition: color 0.2s ease 0s;
+
+}
+
+.table-full:hover{
+    color: var(--color-main);
+}
+
+
+
+
+
